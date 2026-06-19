@@ -14,7 +14,6 @@ O programa calcula a posicao do frame 6 e a posicao final da ponta da garra, cha
 
 - Python 3.10 ou superior.
 - `pip`, normalmente instalado junto com o Python.
-- Git, caso voce queira versionar e enviar o projeto para o GitHub.
 
 Dependencia Python usada pelo programa:
 
@@ -28,13 +27,7 @@ Recomenda-se usar uma virtual environment (`venv`) para instalar as dependencias
 
 ### Windows PowerShell
 
-Entre na pasta do projeto:
-
-```powershell
-cd "C:\caminho\para\Trabalho-RoKiSim-Cinematica-Direta-Robotica-1-Debora-Sales-Costa"
-```
-
-Crie a env:
+Entre na pasta do projeto e crie a env:
 
 ```powershell
 python -m venv .venv
@@ -61,7 +54,6 @@ Se o PowerShell bloquear a ativacao da env, rode o Python diretamente pela env:
 ### Windows CMD
 
 ```cmd
-cd C:\caminho\para\Trabalho-RoKiSim-Cinematica-Direta-Robotica-1-Debora-Sales-Costa
 python -m venv .venv
 .venv\Scripts\activate.bat
 python -m pip install -r requirements.txt
@@ -70,7 +62,6 @@ python -m pip install -r requirements.txt
 ### macOS e Linux
 
 ```bash
-cd /caminho/para/Trabalho-RoKiSim-Cinematica-Direta-Robotica-1-Debora-Sales-Costa
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.txt
@@ -81,13 +72,13 @@ python -m pip install -r requirements.txt
 Com a env ativa, execute:
 
 ```bash
-python irb6640_320_130_COM_GARRA_FINAL_COMENTADO.py
+python main.py
 ```
 
 No Windows, se preferir rodar direto pela env sem ativar:
 
 ```powershell
-.\.venv\Scripts\python.exe .\irb6640_320_130_COM_GARRA_FINAL_COMENTADO.py
+.\.venv\Scripts\python.exe .\main.py
 ```
 
 O programa vai pedir os seis angulos das juntas em graus:
@@ -114,57 +105,6 @@ Em qualquer sistema, use:
 
 ```bash
 deactivate
-```
-
-## Como subir para o GitHub
-
-Confira o estado do repositorio:
-
-```bash
-git status
-```
-
-Adicione os arquivos:
-
-```bash
-git add .
-```
-
-Crie um commit:
-
-```bash
-git commit -m "Adicionar programa de cinematica direta"
-```
-
-Envie para o GitHub:
-
-```bash
-git push origin main
-```
-
-Se o Git pedir login, entre com a conta do GitHub que tem permissao no repositorio.
-
-## Configuracao de nome e e-mail dos commits
-
-Para conferir qual nome e e-mail o Git esta usando:
-
-```bash
-git config user.name
-git config user.email
-```
-
-Para configurar apenas neste repositorio:
-
-```bash
-git config user.name "Seu Nome"
-git config user.email "seu-email-do-github@email.com"
-```
-
-Para configurar globalmente na maquina:
-
-```bash
-git config --global user.name "Seu Nome"
-git config --global user.email "seu-email-do-github@email.com"
 ```
 
 ## Observacao
