@@ -22,7 +22,7 @@ import numpy as np
 
 
 ROBOT = [
-    # alpha,   a,       theta_offset,   d
+    # alpha,   a/li,       theta_offset,   di
     (0.0,      0.0,       0.0,        780.0),   # Junta 1
     (-90.0,  320.0,     -90.0,          0.0),   # Junta 2
     (0.0,   1280.0,       0.0,          0.0),   # Junta 3
@@ -160,7 +160,7 @@ def tz(mm):
 #   1. Rx(alpha)
 #      gira em torno de X
 #
-#   2. Tx(a)
+#   2. Tx(a/li)
 #      anda no eixo X
 #
 #   3. Rz(theta_total)
@@ -172,7 +172,7 @@ def tz(mm):
 #
 # A matriz final da junta é:
 #
-#   A = Rx(alpha) @ Tx(a) @ Rz(theta_total) @ Tz(d)
+#   A = Rx(alpha) @ Tx(a/li) @ Rz(theta_total) @ Tz(d)
 #
 #   Em matriz, a ordem importa!!!!!!!!!!!!!!!!!!
 
